@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+cache/
+results/
+preview_inputs/
+preview_lakes.json
+*.part

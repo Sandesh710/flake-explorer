@@ -1,0 +1,22 @@
+{
+  "scope": "Real Pine 1950\u20132014; expanded future wrapper still to be tested on MSI.",
+  "default_baseline_max_absolute_differences": {
+    "T_wML": 1.4779288903810084e-12,
+    "Tb": 6.0822458181064576e-12,
+    "h_ML": 6.8056671409522096e-12,
+    "H_ice": 1.1102230246251565e-16,
+    "H_snow": 0.0,
+    "Qbot": 3.5358382888261985e-12
+  },
+  "annual_edge_cases": "PASS",
+  "warmup_context_days": 184,
+  "physics_and_integrator_unchanged": true,
+  "input_cache_and_corruption_recovery": "PASS",
+  "annual_calendar_and_ice_edge_cases": "PASS",
+  "widget_construction_and_linked_selection": "PASS",
+  "browser_and_colab_frontend": "Not verified here; use MSI and Colab preview before publication.",
+  "expanded_future_wrapper": "PASS: uploaded MSI dashboard report, 6/6 cases",
+  "sen_slopes_and_decadal_units": "PASS: known slopes, irregular years and undefined values",
+  "seasonal_display_update": "PASS: one thermal section; month-year winter ticks",
+  "tile_free_map": "PASS: no raster tile layers; catalogue points and selection preserved. Colab visual confirmation pending."
+}

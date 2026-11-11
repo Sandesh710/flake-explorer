@@ -1,0 +1,36 @@
+{
+  "status": "PASS_REPRESENTATIVE_MODEL_CHECKS",
+  "model": "GFDL-ESM4",
+  "sample_lakes_requested": 12,
+  "model_was_run": true,
+  "originals_modified": false,
+  "github_upload_performed": false,
+  "scope": "Representative-lake numerical reproduction and model-switch smoke checks, not all-lake model verification.",
+  "selected_lakes": [
+    "01000100",
+    "29030100",
+    "82008700",
+    "34019200",
+    "77018100",
+    "29004300",
+    "69042900",
+    "38090900",
+    "18022702",
+    "31019100",
+    "30000900",
+    "73005500"
+  ],
+  "elapsed_minutes": 6.161238230582482,
+  "cases_passed": 60,
+  "cases_expected": 60,
+  "model_files_sha256": {
+    "flake/__init__.py": "c71986992369f39179e4c4a238988df19197938256aa7176431fc1d0d38da727",
+    "flake/configuration.py": "07681ec9a446e2d2262528fb462bd1905a95186933e9bc09c8e40a3bdcff801b",
+    "flake/inputs.py": "44bbcf2b1ec5e75d37a27425a2dabff3adedbc776e32962b9d7e9d5926eb340e",
+    "flake/model.py": "927f5cc8ef66771ca9da950cb956e99fb999bf66481b493294b9b65bd3108580",
+    "flake/physics.py": "981b6f20453c0faaa88485e31181ab41e7d2b9aabe74595bcaf7cb5a573099da",
+    "NOTICE.md": "6d7e9a8138640ad1614f973e661ad08fb9f402ac981f620d769623b1c89a3a97",
+    "CITATION.cff": "5fd0ed68593833d4cfe1c2f8c5a1be753564927c6bf95c2ae77eacbe1e1c8bfe"
+  },
+  "all_lake_numerical_reproduction_verified": false
+}

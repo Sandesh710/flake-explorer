@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: "Please cite the original FLake model description and the companion application, as described in NOTICE.md."
+title: "FLake Explorer: A Python implementation of FLake"
+repository-code: "https://github.com/Sandesh710/flake-explorer"
+authors:
+  - family-names: Dahal
+    given-names: Sandesh
+    affiliation: University of Minnesota
+type: software
+version: 2.0.0
+references:
+  - type: report
+    title: "Parameterization of Lakes in Numerical Weather Prediction. Description of a Lake Model."
+    authors:
+      - family-names: Mironov
+        given-names: Dmitrii V.
+    year: 2008
+    doi: "10.5676/DWD_pub/nwv/cosmo-tr_11"
+    number: "11"
+    institution:
+      name: Deutscher Wetterdienst
+  - type: article
+    title: "NASA Global Daily Downscaled Projections, CMIP6"
+    authors:
+      - family-names: Thrasher
+        given-names: Bridget
+      - family-names: Wang
+        given-names: Weile
+      - family-names: Michaelis
+        given-names: Andrew
+      - family-names: Melton
+        given-names: Forrest
+      - family-names: Lee
+        given-names: Tsengdar
+      - family-names: Nemani
+        given-names: Ramakrishna
+    year: 2022
+    journal: Scientific Data
+    volume: 9
+    start: 262
+    doi: "10.1038/s41597-022-01393-4"

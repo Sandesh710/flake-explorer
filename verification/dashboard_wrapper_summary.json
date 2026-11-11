@@ -1,0 +1,16 @@
+{
+  "status": "PASS_DASHBOARD_WRAPPER",
+  "selected_lakes": [
+    "10000200",
+    "02000700",
+    "69042900"
+  ],
+  "scope": "New setup, warm-up, annual-indicator and scenario wrapper; three-lake representative check.",
+  "physics_changed": false,
+  "github_upload_performed": false,
+  "originals_modified": false,
+  "cases_passed": 6,
+  "cases_expected": 6,
+  "full_input_lakes": 1925,
+  "annual_calendar_checked": true
+}

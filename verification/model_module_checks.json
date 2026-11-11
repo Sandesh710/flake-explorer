@@ -1,0 +1,24 @@
+{
+  "snow_off": {
+    "status": "PASS",
+    "years": [
+      1950,
+      1959
+    ]
+  },
+  "sediment_off": {
+    "status": "PASS",
+    "years": [
+      1950,
+      1959
+    ]
+  },
+  "custom_depth_fetch_kd_retention": {
+    "status": "PASS",
+    "years": [
+      1950,
+      1959
+    ],
+    "scope": "Finite simulation and parameter plumbing smoke check; altered settings are not compared to production."
+  }
+}

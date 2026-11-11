@@ -1,0 +1,4562 @@
+[
+  {
+    "lake_id": "01000100",
+    "scenario": "historical",
+    "rows": 23725,
+    "first_date": "1950-01-01",
+    "last_date": "2014-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 7.389644451905042e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 1.7053025658242404e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 6.0822458181064576e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 1.3796963571621745e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 1.825095630181295e-12,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 3.82804898890754e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 3.126388037344441e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 1.7053025658242404e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 9.864109529189591e-12,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "01000100",
+    "scenario": "ssp126",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 1.4779288903810084e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 5.229594535194337e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 5.343281372915953e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 3.707700813038173e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 6.20503648463e-13,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 4.718447854656915e-16,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 1.2631673484975181e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 2.7284841053187847e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 5.229594535194337e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 8.106848525812893e-12,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "01000100",
+    "scenario": "ssp245",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 1.5563728084089234e-10,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 5.861693352926522e-10,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 4.89421836391557e-10,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 1.1034995139880266e-09,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 5.5431659262694666e-11,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 3.885780586188048e-16,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 1.1216760853471897e-10,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 1.772377800079994e-10,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 5.861693352926522e-10,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 2.6957325260923426e-10,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "01000100",
+    "scenario": "ssp370",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 4.547473508864641e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 1.5916157281026244e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 1.7053025658242404e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 4.2583714332522504e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 1.2742029653622922e-12,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 7.91033905045424e-16,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 5.684341886080802e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 8.526512829121202e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 3.1086244689504383e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 8.526512829121202e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 1.5916157281026244e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 3.437605755607365e-11,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "01000100",
+    "scenario": "ssp585",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 1.7053025658242404e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 5.8548721426632255e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 1.3812950783176348e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 2.637312590536567e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 7.72715225139109e-13,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 5.551115123125783e-16,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 2.2737367544323206e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 4.547473508864641e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 2.736977311457167e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 3.353761712787673e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 5.8548721426632255e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 2.1112445125481827e-11,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "29030100",
+    "scenario": "historical",
+    "rows": 23725,
+    "first_date": "1950-01-01",
+    "last_date": "2014-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 5.684341886080802e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 1.1368683772161603e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 5.684341886080802e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 2.7700064464397656e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 7.105427357601002e-15,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 7.958078640513122e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 1.1368683772161603e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 2.4158453015843406e-13,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "29030100",
+    "scenario": "ssp126",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 3.410605131648481e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 6.252776074688882e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 3.410605131648481e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 1.0755285551056204e-16,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 4.3021142204224816e-15,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 5.551115123125783e-17,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 2.1600499167107046e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 5.343281372915953e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 4.218847493575595e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 4.092726157978177e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 6.252776074688882e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 1.2221335055073723e-12,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "29030100",
+    "scenario": "ssp245",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 1.7053025658242404e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 2.8421709430404007e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 1.7053025658242404e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 1.532107773982716e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 4.786449014915206e-14,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 9.71445146547012e-17,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 4.718003765447065e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 8.992628863779828e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 2.1316282072803006e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 1.8189894035458565e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 2.8421709430404007e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 7.673861546209082e-13,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "29030100",
+    "scenario": "ssp370",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 5.684341886080802e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 5.684341886080802e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 5.684341886080802e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 1.5959455978986625e-16,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 2.4841240175987878e-14,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 8.326672684688674e-17,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 3.808509063674137e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 4.8345327741117217e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 2.6645352591003757e-15,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 2.2737367544323206e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 5.684341886080802e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 2.2737367544323206e-13,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "29030100",
+    "scenario": "ssp585",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 1.1368683772161603e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 2.8421709430404007e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 1.1368683772161603e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 1.9872992140790302e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 2.581268532253489e-15,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 6.938893903907228e-17,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 1.1937117960769683e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 5.7411853049416095e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 1.8207657603852567e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 1.5916157281026244e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 2.8421709430404007e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 5.400124791776761e-13,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "82008700",
+    "scenario": "historical",
+    "rows": 23725,
+    "first_date": "1950-01-01",
+    "last_date": "2014-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 5.684341886080802e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 1.7053025658242404e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 1.7053025658242404e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 1.4288570326925765e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 2.5202062658991053e-14,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 2.1882495815361835e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 1.7053025658242404e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 1.7053025658242404e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 5.080380560684716e-13,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "82008700",
+    "scenario": "ssp126",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 9.094947017729282e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 9.094947017729282e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 6.252776074688882e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 6.394884621840902e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 2.7422508708241367e-14,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 4.75042227776612e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 5.343281372915953e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 9.094947017729282e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 3.787148372680349e-11,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "82008700",
+    "scenario": "ssp245",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 1.1368683772161603e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 1.7053025658242404e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 1.1368683772161603e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 8.970602038971265e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 1.3100631690576847e-14,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 4.6629367034256575e-15,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 5.684341886080802e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 1.7053025658242404e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 4.476419235288631e-12,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "82008700",
+    "scenario": "ssp370",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 5.684341886080802e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 1.1368683772161603e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 2.8421709430404007e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 1.4194201369832626e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 4.218847493575595e-15,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 3.739231146937527e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 1.7053025658242404e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 1.1368683772161603e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 4.408917675391422e-12,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "82008700",
+    "scenario": "ssp585",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 1.1368683772161603e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 3.979039320256561e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 3.410605131648481e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 4.978240042419202e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 5.4511950509095186e-14,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 3.108624468950438e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 1.7053025658242404e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 3.979039320256561e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 2.913225216616411e-13,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "34019200",
+    "scenario": "historical",
+    "rows": 23725,
+    "first_date": "1950-01-01",
+    "last_date": "2014-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 6.252776074688882e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 6.821210263296962e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 3.979039320256561e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 4.2366110619695974e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 5.047073869945962e-13,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 2.4424906541753444e-15,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 5.684341886080802e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 1.1368683772161603e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 1.3322676295501878e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 1.7053025658242404e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 6.821210263296962e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 8.572698106945609e-11,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "34019200",
+    "scenario": "ssp126",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 5.115907697472721e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 1.8189894035458565e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 1.3983481039758772e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 8.248957072964913e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 5.99631455600047e-13,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 7.632783294297951e-15,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 5.684341886080802e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 5.684341886080802e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 9.916512055951898e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 2.3305801732931286e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 1.8189894035458565e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 1.788080794540292e-11,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "34019200",
+    "scenario": "ssp245",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 2.2737367544323206e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 3.979039320256561e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 3.979039320256561e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 1.4511725154875421e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 2.7766677845875165e-13,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 9.43689570931383e-16,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 3.410605131648481e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 3.979039320256561e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 1.687538997430238e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 4.547473508864641e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 3.979039320256561e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 2.9309887850104133e-13,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "34019200",
+    "scenario": "ssp370",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 3.1093350116861984e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 3.1093350116861984e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 3.75734998669941e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 8.296252573813945e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 1.092015367021304e-12,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 3.5388358909926865e-16,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 5.8399951541332484e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 2.1032064978498966e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 3.1093350116861984e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 4.36307345808018e-09,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "34019200",
+    "scenario": "ssp585",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 1.5347723092418164e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 3.069544618483633e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 1.6484591469634324e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 2.2306601010768645e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 4.755085214469545e-13,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 5.065392549852277e-16,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 5.684341886080802e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 5.684341886080802e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 1.3096190798478347e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 2.2168933355715126e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 3.069544618483633e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 2.8883562208648073e-12,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "77018100",
+    "scenario": "historical",
+    "rows": 23725,
+    "first_date": "1950-01-01",
+    "last_date": "2014-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 2.5011104298755527e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 1.9895196601282805e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 3.240074875066057e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 5.7052140789437544e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 6.63136212608606e-13,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 8.076872504148014e-15,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 1.1368683772161603e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 1.7053025658242404e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 1.0649259252204502e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 1.3642420526593924e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 1.9895196601282805e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 1.7472689961550714e-12,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "77018100",
+    "scenario": "ssp126",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 7.275957614183426e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 1.290345608140342e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 1.0402345651527867e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 1.7917223260610626e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 4.23716617348191e-12,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 2.3314683517128287e-15,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 6.938893903907228e-17,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 3.353761712787673e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 7.901235221652314e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 5.945910430682488e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 4.376943252282217e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 1.290345608140342e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 7.503331289626658e-12,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "77018100",
+    "scenario": "ssp245",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 4.376943252282217e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 4.376943252282217e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 4.376943252282217e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 7.433609283680198e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 6.300515664747763e-13,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 4.3298697960381105e-15,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 8.326672684688674e-17,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 3.240074875066057e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 9.606537787476555e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 1.20552456905898e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 2.0804691303055733e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 4.376943252282217e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 8.89428974915063e-10,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "77018100",
+    "scenario": "ssp370",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 1.5347723092418164e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 4.263256414560601e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 4.320099833421409e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 4.775402295820186e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 4.711786516509164e-13,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 4.773959005888173e-15,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 6.938893903907228e-17,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 3.183231456205249e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 1.1795009413617663e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 1.1573408897902482e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 1.972466634470038e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 4.263256414560601e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 2.071232074740692e-11,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "77018100",
+    "scenario": "ssp585",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 8.924416761146858e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 8.924416761146858e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 8.924416761146858e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 2.516653552220305e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 8.989475830389893e-13,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 2.1094237467877974e-15,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 6.938893903907228e-17,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 3.495870259939693e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 5.059064278611913e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 1.6741408259690616e-10,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 2.5636381906224415e-10,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 8.924416761146858e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 2.9027980019691313e-10,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "29004300",
+    "scenario": "historical",
+    "rows": 23725,
+    "first_date": "1950-01-01",
+    "last_date": "2014-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 1.5916157281026244e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 3.240074875066057e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 5.286437954055145e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 8.416822794288237e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 8.603118217820338e-13,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 1.1950440637065185e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 5.684341886080801e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 3.240074875066057e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 2.0027357550134184e-10,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "29004300",
+    "scenario": "ssp126",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 4.945377440890297e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 1.1084466677857563e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 2.2396307031158358e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 4.643485596034225e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 1.7887913372760522e-12,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 1.2712053631958042e-14,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 6.938893903907228e-17,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 7.219114195322618e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 1.5518253349000588e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 9.358958052985145e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 1.0118128557223827e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 1.1084466677857563e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 1.0373355507908855e-09,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "29004300",
+    "scenario": "ssp245",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 1.5945147424645256e-09,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 6.942286745470483e-10,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 2.4615474103484303e-09,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 5.6214357613271204e-09,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 4.58561077998354e-10,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 1.2212453270876722e-15,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 6.938893903907228e-17,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 6.252776074688882e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 1.5916157281026244e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 2.1170287745064797e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 1.6484591469634324e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 6.942286745470483e-10,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 4.5607480103626585e-07,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "29004300",
+    "scenario": "ssp370",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 1.233502189279534e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 1.8417267710901797e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 1.8246737454319373e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 2.34331221093953e-10,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 3.0634383918481944e-12,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 8.881784197001252e-16,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 8.326672684688674e-17,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 7.389644451905042e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 1.1084466677857563e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 3.0833113839889847e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 1.8758328224066645e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 1.8417267710901797e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 3.3121736464636342e-09,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "29004300",
+    "scenario": "ssp585",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 5.115907697472721e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 2.3590018827235326e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 9.833911462919787e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 1.2330136911486989e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 1.966760088123465e-12,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 8.881784197001252e-16,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 8.326672684688674e-17,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 6.536993168992922e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 1.4779288903810084e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 8.857636846215655e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 3.524291969370097e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 2.3590018827235326e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 1.437252095115582e-09,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "69042900",
+    "scenario": "historical",
+    "rows": 23725,
+    "first_date": "1950-01-01",
+    "last_date": "2014-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 4.547473508864641e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 1.8758328224066645e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 2.1032064978498966e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 5.633182809106074e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 9.192646643896296e-13,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 2.05568895239594e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 3.979039320256561e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 1.8758328224066645e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 2.8350655156827997e-12,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "69042900",
+    "scenario": "ssp126",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 1.1368683772161603e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 1.7337242752546445e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 3.296918293926865e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 8.23021650830924e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 1.694422380182914e-12,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 6.938893903907228e-18,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 3.61666252501891e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 1.0800249583553523e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 1.7337242752546445e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 1.5649703755116207e-11,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "69042900",
+    "scenario": "ssp245",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 4.831690603168681e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 5.3432813729159534e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 4.496314431889914e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 6.102656158191166e-10,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 7.541300917068838e-12,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 1.734723475976807e-18,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 1.0170886355354014e-10,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 3.0127011996228248e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 5.3432813729159534e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 9.394796052220045e-11,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "69042900",
+    "scenario": "ssp370",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 4.3877435018657707e-10,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 2.1627784008160233e-09,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 2.384297204116592e-09,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 9.454764082761358e-09,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 1.4004797321831575e-10,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 3.469446951953614e-18,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 3.5412348609042965e-09,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 3.213926902390085e-10,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 2.1627784008160233e-09,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 2.0874644235391315e-09,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "69042900",
+    "scenario": "ssp585",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 3.126388037344441e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 1.00669694802491e-10,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 8.29913915367797e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 1.4629684130795795e-09,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 1.0206280265379064e-12,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 1.734723475976807e-18,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 8.632605741354382e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 1.4438228390645236e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 1.00669694802491e-10,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 2.333955251287989e-11,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "38090900",
+    "scenario": "historical",
+    "rows": 23725,
+    "first_date": "1950-01-01",
+    "last_date": "2014-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 2.2737367544323206e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 9.663381206337363e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 1.8189894035458565e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 4.098277273101303e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 7.627232179174825e-13,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 9.992007221626409e-16,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 2.5579538487363607e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 1.2789769243681803e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 6.107336858462986e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 3.410605131648481e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 9.663381206337363e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 1.0740741629433614e-11,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "38090900",
+    "scenario": "ssp126",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 9.094947017729282e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 1.8758328224066645e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 2.5579538487363607e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 5.154987547939527e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 1.6500134591979077e-12,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 4.718447854656915e-16,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 5.684341886080802e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 4.547473508864641e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 5.508926648190027e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 1.1368683772161603e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 1.8758328224066645e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 1.2742162880385877e-10,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "38090900",
+    "scenario": "ssp245",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 1.1937117960769683e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 7.503331289626658e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 1.1937117960769683e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 2.453193204132731e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 4.806155473602303e-13,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 2.1094237467877974e-14,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 1.261923898709938e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 5.2665427574538626e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 2.0738966099997924e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 3.979039320256561e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 7.503331289626658e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 2.1813661987835076e-12,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "38090900",
+    "scenario": "ssp370",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 1.1937117960769683e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 1.1937117960769683e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 3.694822225952521e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 3.0686564400639327e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 3.923528169025303e-13,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 2.4841240175987878e-15,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 6.252776074688882e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 2.1600499167107046e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 8.850697952311748e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 6.252776074688882e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 1.1937117960769683e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 1.759552503699524e-10,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "38090900",
+    "scenario": "ssp585",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 5.684341886080801e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 1.2505552149377763e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 4.661160346586257e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 6.112554906678724e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 1.1609602168505262e-12,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 3.70536934468646e-15,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 1.4210854715202004e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 2.2737367544323206e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 5.910827383104333e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 9.094947017729282e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 1.2505552149377763e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 8.129319439831306e-11,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "18022702",
+    "scenario": "historical",
+    "rows": 23725,
+    "first_date": "1950-01-01",
+    "last_date": "2014-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 6.0254023992456496e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 5.038600647822022e-10,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 8.981260180007666e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 1.9447465859911972e-10,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 1.0617950962910072e-11,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 2.42861286636753e-16,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 2.842170943040401e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 8.526512829121202e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 1.6342482922482304e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 1.7053025658242404e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 5.038600647822022e-10,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 5.635456545860507e-10,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "18022702",
+    "scenario": "ssp126",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 9.322320693172514e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 1.4949819160392508e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 1.3642420526593924e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 2.4142021715078954e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 6.2660987509843835e-12,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 2.7304547511874944e-15,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 6.938893903907228e-17,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 1.3642420526593924e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 4.064304448547773e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 1.7906898186481612e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 8.29913915367797e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 1.4949819160392508e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 2.745190741393344e-09,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "18022702",
+    "scenario": "ssp245",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 2.1032064978498966e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 6.821210263296962e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 4.945377440890297e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 2.7322588636025102e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 9.64783808399261e-13,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 1.8318679906315083e-15,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 7.28583859910259e-17,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 1.4495071809506044e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 3.950617610826157e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 1.4431567052497485e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 2.1600499167107046e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 6.821210263296962e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 6.454854428739054e-10,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "18022702",
+    "scenario": "ssp370",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 5.5706550483591855e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 5.5706550483591855e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 1.1254996934439987e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 3.6566749628264006e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 8.374412274747556e-13,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 2.1371793224034263e-15,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 9.71445146547012e-17,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 4.831690603168681e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 9.379164112033322e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 7.736111751199815e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 1.1368683772161603e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 5.5706550483591855e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 1.74748038261896e-09,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "18022702",
+    "scenario": "ssp585",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 2.1600499167107046e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 1.0174971976084635e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 1.2789769243681803e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 9.364986564008859e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 1.7709167465795872e-12,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 4.218847493575595e-15,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 6.938893903907228e-17,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 9.663381206337363e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 2.3874235921539366e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 1.9657386829408097e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 9.777068044058979e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 1.0174971976084635e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 1.3489653838405502e-10,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "31019100",
+    "scenario": "historical",
+    "rows": 23725,
+    "first_date": "1950-01-01",
+    "last_date": "2014-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 5.684341886080801e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 4.092726157978177e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 6.480149750132114e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 2.3229418388837075e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 5.137001934940599e-13,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 1.1531220422966726e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 5.4001247917767614e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 4.092726157978177e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 3.7690739418394514e-11,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "31019100",
+    "scenario": "ssp126",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 4.092726157978177e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 4.092726157978177e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 4.092726157978177e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 3.1632696462224885e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 1.0296208330373702e-12,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 8.326672684688674e-16,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 9.71445146547012e-17,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 3.694822225952521e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 1.0231815394945443e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 1.5760281968368872e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 7.617018127348274e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 4.092726157978177e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 9.434771186533908e-09,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "31019100",
+    "scenario": "ssp245",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 5.172751116333529e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 1.0857093002414331e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 1.5802470443304628e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 6.895284343499952e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 6.800227048131546e-12,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 5.218048215738236e-15,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 8.326672684688674e-17,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 2.7284841053187847e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 4.263256414560601e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 9.479639295761899e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 4.661160346586257e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 1.0857093002414331e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 1.3135945664544124e-09,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "31019100",
+    "scenario": "ssp370",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 5.115907697472721e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 6.0254023992456496e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 3.808509063674137e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 5.079225928739106e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 4.3853809472693683e-13,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 1.289246487345963e-14,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 8.326672684688674e-17,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 6.252776074688882e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 5.4001247917767614e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 8.612222046622264e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 2.3874235921539366e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 6.0254023992456496e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 6.747313818777911e-11,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "31019100",
+    "scenario": "ssp585",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 1.4210854715202004e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 4.547473508864641e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 4.149569576838985e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 2.453237613053716e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 8.75632899521861e-13,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 1.0103029524088925e-14,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 9.71445146547012e-17,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 1.1993961379630491e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 3.0240698833949864e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 2.3096191625882057e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 9.663381206337363e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 4.547473508864641e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 3.196816145134562e-10,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "30000900",
+    "scenario": "historical",
+    "rows": 23725,
+    "first_date": "1950-01-01",
+    "last_date": "2014-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 3.979039320256561e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 3.979039320256561e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 5.684341886080801e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 8.182343691487404e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 2.6612045900265e-13,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 5.0182080713057076e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 2.2737367544323206e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 3.979039320256561e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 1.120881165661558e-12,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "30000900",
+    "scenario": "ssp126",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 1.7053025658242404e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 2.2737367544323206e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 1.7053025658242404e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 1.0258460747536446e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 1.4210854715202004e-14,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 3.608224830031759e-15,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 5.115907697472721e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 1.3073986337985843e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 5.995204332975845e-15,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 5.684341886080802e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 2.2737367544323206e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 1.2079226507921703e-13,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "30000900",
+    "scenario": "ssp245",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 1.7053025658242404e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 2.2737367544323206e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 1.7053025658242404e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 9.447997939560082e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 1.0091927293842673e-13,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 1.3322676295501878e-15,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 6.252776074688882e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 8.526512829121202e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 4.9960036108132044e-15,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 5.684341886080802e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 2.2737367544323206e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 2.0961010704922955e-13,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "30000900",
+    "scenario": "ssp370",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 2.2737367544323206e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 2.2737367544323206e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 2.2737367544323206e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 7.505107646466058e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 1.38222766565832e-13,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 2.0261570199409107e-15,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 1.865174681370263e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 1.7053025658242404e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 2.2737367544323206e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 1.8971491044794675e-12,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "30000900",
+    "scenario": "ssp585",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 2.2737367544323206e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 2.8421709430404007e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 2.2737367544323206e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 1.0624834345662748e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 1.4133139103478243e-13,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 1.426636586643326e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 1.1368683772161603e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 2.8421709430404007e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 1.6413537196058314e-12,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "73005500",
+    "scenario": "historical",
+    "rows": 23725,
+    "first_date": "1950-01-01",
+    "last_date": "2014-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 1.0953726814477704e-10,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 1.0953726814477704e-10,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 1.0953726814477704e-10,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 1.6579360107016328e-10,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 1.395472626342098e-11,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 5.972111694063642e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 6.536993168992922e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 1.0953726814477704e-10,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 3.0835849429422524e-08,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "73005500",
+    "scenario": "ssp126",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 1.2505552149377763e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 4.376943252282217e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 3.069544618483633e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 8.663736394964872e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 3.1097346919750635e-13,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 1.4988010832439613e-15,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 2.842170943040401e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 8.526512829121202e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 1.5432100042289676e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 6.821210263296962e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 4.376943252282217e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 1.9756640767809586e-11,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "73005500",
+    "scenario": "ssp245",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 4.490630090003833e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 6.934897101018578e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 1.1880274541908875e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 8.175682353339653e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 2.1040946762695967e-12,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 2.220446049250313e-16,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 5.684341886080802e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 1.1368683772161603e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 4.140687792641984e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 4.263256414560601e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 6.934897101018578e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 5.157450855275414e-12,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "73005500",
+    "scenario": "ssp370",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 4.774847184307873e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 6.707523425575346e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 4.899902705801651e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 6.753708703399752e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 4.065858760782248e-12,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 2.220446049250313e-16,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 5.684341886080802e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 1.1368683772161603e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 1.822808570750567e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 7.389644451905042e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 6.707523425575346e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 3.1675639888817386e-10,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  },
+  {
+    "lake_id": "73005500",
+    "scenario": "ssp585",
+    "rows": 31025,
+    "first_date": "2015-01-01",
+    "last_date": "2099-12-31",
+    "status": "PASS",
+    "variables": {
+      "Tm": {
+        "max_absolute_difference": 5.684341886080801e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_wML": {
+        "max_absolute_difference": 2.7284841053187847e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Tb": {
+        "max_absolute_difference": 3.126388037344441e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "h_ML": {
+        "max_absolute_difference": 1.812305860937613e-11,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "C_T": {
+        "max_absolute_difference": 2.3436808049837055e-13,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_ice": {
+        "max_absolute_difference": 1.6653345369377348e-16,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "H_snow": {
+        "max_absolute_difference": 0.0,
+        "tolerance": 2e-08,
+        "pass": true
+      },
+      "T_ice": {
+        "max_absolute_difference": 2.842170943040401e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_snow": {
+        "max_absolute_difference": 8.526512829121202e-14,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "H_B1": {
+        "max_absolute_difference": 5.4436455343420675e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "T_B1": {
+        "max_absolute_difference": 5.684341886080801e-13,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Ts": {
+        "max_absolute_difference": 2.7284841053187847e-12,
+        "tolerance": 2e-07,
+        "pass": true
+      },
+      "Qbot": {
+        "max_absolute_difference": 2.7053914664065815e-12,
+        "tolerance": 2e-06,
+        "pass": true
+      }
+    },
+    "ice_classification_identical": true
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "baseline": [
+    1995,
+    2014
+  ],
+  "bundle_count": 78,
+  "cases_passed": 9625,
+  "expected_cases": 9625,
+  "exporter_version": "20261110.1",
+  "failed_or_interrupted_entries": 0,
+  "github_upload_performed": false,
+  "input_size_GiB": 7.186900487169623,
+  "model": "GFDL-ESM4",
+  "model_reproduction_verified": false,
+  "model_was_run": false,
+  "newly_exported_cases": 9625,
+  "originals_modified": false,
+  "production_lakes": 1925,
+  "projections": [
+    2015,
+    2099
+  ],
+  "release_assets_GiB": 7.188063817098737,
+  "resumed_cases": 0,
+  "status": "PASS_INPUT_EXPORT",
+  "warmup": [
+    1950,
+    1994
+  ]
+}

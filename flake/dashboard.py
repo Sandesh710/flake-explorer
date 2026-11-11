@@ -7,6 +7,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import ipywidgets as W
+from traitlets import Int
 from IPython.display import display, HTML, FileLink
 from .data_access import InputStore, ROOT
 from .configuration import ModelOptions, InitialConditions
@@ -43,6 +44,34 @@ def _number(description, value=0):
 
 def _grid(children):
     return W.Box(children, layout=W.Layout(display='flex', flex_flow='row wrap', grid_gap='4px 14px'))
+
+
+class ResultPanels(W.VBox):
+    """Result navigation using basic widgets that also render in Colab."""
+    selected_index = Int(0, allow_none=True)
+
+    def __init__(self, pages, titles):
+        self._pages = tuple(pages)
+        self._selector = W.ToggleButtons(
+            options=[(title, i) for i, title in enumerate(titles)], value=0,
+            layout=W.Layout(width='100%', flex_flow='row wrap'),
+            style={'button_width': '175px'})
+        self._panel = W.VBox([self._pages[0]], layout=W.Layout(width='100%'))
+        super().__init__([W.HTML('<h3 style="margin:12px 0 6px">Results</h3>'),
+                         self._selector, self._panel], layout=W.Layout(width='100%'))
+        self._selector.observe(self._choose, names='value')
+        self.observe(self._show, names='selected_index')
+
+    def _choose(self, change):
+        self.selected_index = change['new']
+
+    def _show(self, change):
+        index = change['new']
+        if index is None:
+            self._panel.children = ()
+            return
+        self._panel.children = (self._pages[index],)
+        self._selector.value = index
 
 
 class Dashboard:
@@ -112,11 +141,10 @@ class Dashboard:
         self.thermal_year = W.Dropdown(options=list(range(1995, 2100)), value=2012, description='Year', disabled=True, layout=W.Layout(width='210px'))
         self.winter_year = W.Dropdown(options=[('{}–{}'.format(y-1, y), y) for y in range(1995, 2100)], value=2014, description='Winter', disabled=True, layout=W.Layout(width='230px'))
         self.outputs = [W.Output(), W.Output(), W.Output()]
-        self.result_tabs = W.Tab(children=[W.VBox([self.change_mode, self.outputs[0], self.baseline_info]),
+        self.result_tabs = ResultPanels(pages=[W.VBox([self.change_mode, self.outputs[0], self.baseline_info]),
             W.VBox([self.thermal_year, self.outputs[1], W.HTML('<p class="flake-small">The longest continuous open-water interval in the selected year. Vertical temperatures follow FLake’s bulk-profile reconstruction (Mironov, 2008); the thin line marks mixed-layer depth.</p>')]),
-            W.VBox([self.winter_year, self.outputs[2], W.HTML('<p class="flake-small">Snow above the interface; ice extends downward. The window follows cover formation and melt, with approximately ten days of padding.</p>')])])
-        for i, title in enumerate(['Annual response', 'Thermal structure', 'Snow and ice']):
-            self.result_tabs.set_title(i, title)
+            W.VBox([self.winter_year, self.outputs[2], W.HTML('<p class="flake-small">Snow above the interface; ice extends downward. The window follows cover formation and melt, with approximately ten days of padding.</p>')])],
+            titles=['Annual response', 'Thermal structure', 'Snow and ice'])
         coverage = '1,925 Minnesota lakes' if len(self.catalogue) == 1925 else '{} preview lakes · full catalogue: 1,925'.format(len(self.catalogue))
         heading = W.HTML('<div class="flake-title">FLake: a Python implementation</div><p>Explore lake temperature, mixing, snow and ice under a changing climate.</p><p class="flake-small"><b>GFDL-ESM4</b> · '+coverage+' · Baseline 1995–2014 · Projections 2015–2099</p>')
         self.setup_controls = [self.lake_choice, self.scenario, self.depth, self.fetch, self.area, self.optics, self.kd,

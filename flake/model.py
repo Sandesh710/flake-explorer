@@ -36,7 +36,7 @@ def _engine(options):
     engine.flake_configure_snow_tuning(
         dry_snow_albedo=options.dry_snow_albedo,melting_snow_albedo=options.melting_snow_albedo,
         whiteice_albedo=options.white_ice_albedo,blueice_albedo=options.blue_ice_albedo,
-        rho_snow_min=100.0,rho_snow_max=400.0,gamma_rho_snow=2000.0,
+        rho_snow_min=100.0,rho_snow_max=400.0,gamma_rho_snow=options.snow_density_coefficient,
         kappa_snow_min=options.minimum_snow_conductivity,kappa_snow_max=1.5,gamma_kappa_snow=1.3)
     return engine
 

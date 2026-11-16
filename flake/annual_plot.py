@@ -42,9 +42,42 @@ def annual_figure(result, annual, changes=False, trend_period=(2015, 2099)):
             ax.grid(axis='y', color='#e7eaed', lw=.6)
             slope = sen_slope(d.year, d[key], *trend_period)
             unit = '°C decade⁻¹' if i == 0 else 'days decade⁻¹'
-            annotation = "Sen’s slope: {:+.2f} {}".format(slope, unit) if slope is not None else 'Sen’s slope: undefined'
+            future = d.loc[
+                d.year.between(2015, 2099), key
+            ].to_numpy(float)
+            future = future[np.isfinite(future)]
+
+            if len(future):
+                mean = float(np.mean(future))
+                if i >= 2 and not changes:
+                    mean_date = (
+                        pd.Timestamp('2001-07-01')
+                        + pd.Timedelta(
+                            days=int(np.floor(mean + 0.5))
+                        )
+                    )
+                    mean_value = mean_date.strftime('%b %d')
+                else:
+                    mean_unit = '°C' if i == 0 else 'days'
+                    mean_value = '{:.2f} {}'.format(
+                        mean, mean_unit
+                    )
+                mean_text = 'Mean, 2015–2099: ' + mean_value
+                if i >= 2 and len(future) < 85:
+                    mean_text += ' ({} winters)'.format(
+                        len(future)
+                    )
+            else:
+                mean_text = 'Mean, 2015–2099: undefined'
+
+            slope_text = (
+                'Sen’s slope: {:+.2f} {}'.format(slope, unit)
+                if slope is not None
+                else 'Sen’s slope: undefined'
+            )
+            annotation = mean_text + '\n' + slope_text
             ax.text(.025, .035, annotation, transform=ax.transAxes,
-                ha='left', va='bottom', fontsize=10, bbox=dict(fc='white', ec='none', alpha=.9))
+                ha='left', va='bottom', fontsize=10, bbox=dict(fc='white', ec='black', lw=.7, alpha=.95, pad=.45))
             if np.isfinite(y).sum() == 0:
                 ax.text(.5, .5, 'No defined values', transform=ax.transAxes, ha='center', color='#555')
             _axis(ax)

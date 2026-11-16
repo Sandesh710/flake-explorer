@@ -46,6 +46,7 @@ class ModelOptions:
     white_ice_albedo: float = 0.60
     blue_ice_albedo: float = 0.10
     minimum_snow_conductivity: float = 0.30
+    snow_density_coefficient: float = 2000.0
     wind_height_m: float = 10.0
     temperature_humidity_height_m: float = 2.0
     air_pressure_pa: float = 100000.0
@@ -58,6 +59,13 @@ class ModelOptions:
             raise ValueError("Sediment boundary temperature must be between 0 and 40 °C.")
         if self.light_extinction_m_inv is not None and (not math.isfinite(self.light_extinction_m_inv) or self.light_extinction_m_inv <= 0):
             raise ValueError("Light extinction must be positive and finite.")
+        if (
+            not math.isfinite(self.snow_density_coefficient)
+            or self.snow_density_coefficient < 0
+        ):
+            raise ValueError(
+                "Snow-density coefficient must be finite and nonnegative."
+            )
         for a in [self.dry_snow_albedo,self.melting_snow_albedo,self.white_ice_albedo,self.blue_ice_albedo]:
             if not math.isfinite(a) or not 0 <= a <= 1:
                 raise ValueError("Albedo must be between 0 and 1.")

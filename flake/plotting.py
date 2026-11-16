@@ -14,7 +14,8 @@ from .profiles import temperature_profiles,open_water_season
 
 BLUE='#087e8b'
 RED='#b23b43'
-SNOW='#c58a24'
+SNOW='#8656ad'
+ICE='#2474b5'
 STYLE={'font.family':'sans-serif','font.sans-serif':['Liberation Sans','DejaVu Sans'],
        'font.size':13,'font.weight':'bold','axes.labelsize':14,'axes.labelweight':'bold',
        'axes.titlesize':16,'axes.titleweight':'bold','axes.edgecolor':'black','axes.linewidth':1.6,
@@ -174,12 +175,12 @@ def _winter_data(simulation,ending_year):
 def _cover(upper,lower,d,start,end,snow_limit,ice_limit,ending_year=None):
     upper.fill_between(d.date,0,d.snow_thickness_m*100,color=SNOW,alpha=.35)
     upper.plot(d.date,d.snow_thickness_m*100,c=SNOW,lw=2)
-    lower.fill_between(d.date,0,d.ice_thickness_m*100,color=BLUE,alpha=.28)
-    lower.plot(d.date,d.ice_thickness_m*100,c=BLUE,lw=2)
+    lower.fill_between(d.date,0,d.ice_thickness_m*100,color=ICE,alpha=.32)
+    lower.plot(d.date,d.ice_thickness_m*100,c=ICE,lw=2)
     upper.set_ylim(0,snow_limit);lower.set_ylim(ice_limit,0)
     upper.yaxis.set_major_locator(MaxNLocator(nbins=4,prune='lower'))
     lower.yaxis.set_major_locator(MaxNLocator(nbins=6))
-    upper.set_ylabel('Snow thickness (cm)');lower.set_ylabel('Ice thickness (cm)')
+    upper.set_ylabel(r'$h_{\mathrm{snow}}$ (cm)');lower.set_ylabel(r'$h_{\mathrm{ice}}$ (cm)')
     upper.tick_params(labelbottom=False)
     for ax in [upper,lower]:
         ax.set_xlim(start,end);_axis(ax)

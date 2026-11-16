@@ -122,12 +122,27 @@ class Dashboard:
         self.advanced_fields = {k: _number(label, default) for k, label, default in [
             ('dry_snow_albedo', 'αs,dry · Snow albedo', .6), ('melting_snow_albedo', 'αs,melt · Snow albedo', .1),
             ('white_ice_albedo', 'αi,white · Ice albedo', .6), ('blue_ice_albedo', 'αi,blue · Ice albedo', .1),
+            ('snow_density_coefficient', 'γρ · Density (kg m⁻⁴)', 2000.0),
             ('minimum_snow_conductivity', 'κs,min · W m⁻¹ K⁻¹', .3), ('wind_height_m', 'zu · Wind height (m)', 10),
             ('temperature_humidity_height_m', 'ztq · T/humidity (m)', 2), ('air_pressure_pa', 'pa · Pressure (Pa)', 100000)]}
         initial_note = W.HTML('<p class="flake-small">Initial conditions apply on <b>1 January 1950</b>. The model warms up through 1994 before displaying 1995–2099. Defaults use the production state; its bottom-water adjustment is approximately 3.98 °C. Initial sediment temperature TB1,0 is separate from the lower-boundary temperature Tbs.</p>')
-        self.extra = W.Accordion(children=[W.VBox([initial_note, _grid(list(self.initial_fields.values()))]), _grid(list(self.advanced_fields.values()))], selected_index=None)
-        self.extra.set_title(0, 'Initial conditions · 1 January 1950')
-        self.extra.set_title(1, 'Surface exchange and albedo')
+        self.extra = ResultPanels(
+            pages=[
+                _grid(list(self.advanced_fields.values())),
+                W.VBox([
+                    initial_note,
+                    _grid(list(self.initial_fields.values()))
+                ])
+            ],
+            titles=[
+                'Snow, ice and exchange',
+                'Initial conditions'
+            ]
+        )
+        self.extra.children[0].value = (
+            '<h3 style="margin:12px 0 6px">'
+            'Additional model settings</h3>'
+        )
         self.reset_button = W.Button(description='Restore lake defaults', icon='undo', layout=W.Layout(width='190px'))
         self.run_button = W.Button(description='Run simulation', button_style='primary', icon='play', layout=W.Layout(width='190px', height='40px'))
         self.download_button = W.Button(description='Download results', icon='download', disabled=True, layout=W.Layout(width='180px'))
@@ -284,6 +299,7 @@ class Dashboard:
         self._mark_stale()
 
     def _enabled_fields(self, event=None):
+        self.area.disabled = True
         self.kd.disabled = self.optics.value != 'constant'
         self.retention.disabled = self.retention_mode.value != 'manual'
         for field in [self.boundary_depth, self.boundary_temp, self.initial_fields['sediment_layer_m'], self.initial_fields['sediment_temperature_c']]:
@@ -315,7 +331,7 @@ class Dashboard:
             raise ValueError('Choose a lake from the search suggestions.')
         row = self.catalogue.loc[self.catalogue.DOWLKNUM.eq(self.lake_id)].iloc[0].to_dict()
         lake = replace(lake_from_row(row), mean_depth_m=self.depth.value, fetch_m=self.fetch.value,
-            area_km2=self.area.value, snow_retention=self.retention.value)
+            snow_retention=self.retention.value)
         options = ModelOptions(snow=self.snow.value, sediments=self.sediments.value,
             sediment_depth_m=self.boundary_depth.value, sediment_temperature_c=self.boundary_temp.value,
             light_extinction_m_inv=self.kd.value if self.optics.value == 'constant' else None,

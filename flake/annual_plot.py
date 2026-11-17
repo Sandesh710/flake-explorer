@@ -1,89 +1,50 @@
-"""A compact annual-response figure, with a matched-experiment baseline."""
+"""One annual indicator at a time, with Sen's slope as its only statistic."""
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 from matplotlib.ticker import MaxNLocator
 from .plotting import STYLE, _axis, BLUE, RED
-from .indicators import METRICS, baseline_statistics, relative_to_baseline
+from .indicators import METRICS
 from .experiments import SCENARIO_LABELS
 from .trends import sen_slope
 
+TITLES = ['Open-water mean mixed-layer temperature', 'Open-water duration', 'Ice-on date', 'Ice-off date']
+Y_LABELS = [r'$\langle T_{\mathrm{ML}}\rangle$ (°C)', r'$D_{\mathrm{OW}}$ (days)', r'$d_{\mathrm{on}}$', r'$d_{\mathrm{off}}$']
 
-def annual_figure(result, annual, changes=False, trend_period=(2015, 2099)):
-    stats = baseline_statistics(annual)
-    d = relative_to_baseline(annual) if changes else annual
-    titles = ['Open-water mean mixed-layer temperature', 'Open-water duration', 'Ice-on date', 'Ice-off date']
-    reference = mdates.date2num(pd.Timestamp('2001-07-01'))
+
+def annual_figure(result, annual, metric=None, trend_period=(2015, 2099)):
+    metric = METRICS[0] if metric is None else metric
+    if metric not in METRICS:
+        raise ValueError('Choose one of the four annual indicators.')
+    i = METRICS.index(metric)
+    y = annual[metric].to_numpy(float)
     with plt.rc_context(STYLE):
-        fig, axes = plt.subplots(2, 2, figsize=(14, 7.8), sharex=True, constrained_layout=True)
-        for i, (ax, key, title) in enumerate(zip(axes.flat, METRICS, titles)):
-            y = d[key].to_numpy(float)
-            if i >= 2 and not changes:
-                y = y + reference
-                ax.yaxis.set_major_formatter(mdates.DateFormatter('%b %d'))
-                ax.yaxis.set_major_locator(mdates.AutoDateLocator(minticks=3, maxticks=6))
-            ax.plot(d.year, y, color=RED if i == 0 else BLUE, lw=1.4, alpha=.95)
-            for label, first, last, color in [('Baseline',1995,2014,'#e9edf0'),
-                    ('Near',2020,2040,'#e2efe6'), ('Mid',2050,2070,'#fff0d8'), ('End',2080,2099,'#f7e1de')]:
-                ax.axvspan(first-.5, last+.5, color=color, zorder=-2)
-                if i < 2:
-                    ax.text((first+last)/2, .975, label, transform=ax.get_xaxis_transform(),
-                        ha='center', va='top', fontsize=9, color='#475662', clip_on=True)
-            if changes:
-                ax.axhline(0, color='#687783', lw=.9, ls='--')
-            elif stats[key]['mean'] is not None:
-                base = stats[key]['mean'] + (reference if i >= 2 else 0)
-                ax.axhline(base, color='#687783', lw=.9, ls='--')
-            ax.set_title('({}) {}'.format(chr(97+i), title), loc='center', fontsize=14, pad=10)
-            ax.set_ylabel(('Change (°C)' if i == 0 else 'Change (days)') if changes else ('Temperature (°C)' if i == 0 else ('Days per year' if i == 1 else 'Date')))
-            ax.set_xlim(1995, 2099)
-            ax.xaxis.set_major_locator(MaxNLocator(nbins=6, integer=True))
-            ax.grid(axis='y', color='#e7eaed', lw=.6)
-            slope = sen_slope(d.year, d[key], *trend_period)
-            unit = '°C decade⁻¹' if i == 0 else 'days decade⁻¹'
-            future = d.loc[
-                d.year.between(2015, 2099), key
-            ].to_numpy(float)
-            future = future[np.isfinite(future)]
-
-            if len(future):
-                mean = float(np.mean(future))
-                if i >= 2 and not changes:
-                    mean_date = (
-                        pd.Timestamp('2001-07-01')
-                        + pd.Timedelta(
-                            days=int(np.floor(mean + 0.5))
-                        )
-                    )
-                    mean_value = mean_date.strftime('%b %d')
-                else:
-                    mean_unit = '°C' if i == 0 else 'days'
-                    mean_value = '{:.2f} {}'.format(
-                        mean, mean_unit
-                    )
-                mean_text = 'Mean, 2015–2099: ' + mean_value
-                if i >= 2 and len(future) < 85:
-                    mean_text += ' ({} winters)'.format(
-                        len(future)
-                    )
-            else:
-                mean_text = 'Mean, 2015–2099: undefined'
-
-            slope_text = (
-                'Sen’s slope: {:+.2f} {}'.format(slope, unit)
-                if slope is not None
-                else 'Sen’s slope: undefined'
-            )
-            annotation = mean_text + '\n' + slope_text
-            ax.text(.025, .035, annotation, transform=ax.transAxes,
-                ha='left', va='bottom', fontsize=10, bbox=dict(fc='white', ec='black', lw=.7, alpha=.95, pad=.45))
-            if np.isfinite(y).sum() == 0:
-                ax.text(.5, .5, 'No defined values', transform=ax.transAxes, ha='center', color='#555')
-            _axis(ax)
-        axes[1, 0].set_xlabel('Winter-ending year'); axes[1, 1].set_xlabel('Winter-ending year')
-        for ax in axes[0]:
-            ax.set_xlabel('Calendar year'); ax.tick_params(labelbottom=True)
-        fig.suptitle('{} | {}{}'.format(result.simulation.lake.name, SCENARIO_LABELS[result.scenario],
-            ' | Change from 1995–2014' if changes else ''), fontsize=18, fontweight='bold')
+        fig, ax = plt.subplots(figsize=(12, 4.8), constrained_layout=True)
+        if i >= 2:
+            y = y + mdates.date2num(pd.Timestamp('2001-07-01'))
+            ax.yaxis.set_major_formatter(mdates.DateFormatter('%b %d'))
+            ax.yaxis.set_major_locator(mdates.AutoDateLocator(minticks=3, maxticks=6))
+        ax.plot(annual.year, y, color=RED if i == 0 else BLUE, lw=1.5)
+        for label, first, last, color in [('Baseline',1995,2014,'#e9edf0'),
+                ('Near',2020,2040,'#e2efe6'), ('Mid',2050,2070,'#fff0d8'), ('End',2080,2099,'#f7e1de')]:
+            ax.axvspan(first-.5, last+.5, color=color, zorder=-2)
+            ax.text((first+last)/2, .975, label, transform=ax.get_xaxis_transform(),
+                    ha='center', va='top', fontsize=10, color='#475662')
+        slope = sen_slope(annual.year, annual[metric], *trend_period)
+        unit = '°C decade⁻¹' if i == 0 else 'days decade⁻¹'
+        annotation = 'Sen’s slope: {:+.2f} {}'.format(slope, unit) if slope is not None else 'Sen’s slope: undefined'
+        ax.text(.02, .04, annotation, transform=ax.transAxes, ha='left', va='bottom',
+                fontsize=11, bbox=dict(boxstyle='square,pad=0.35', fc='white', ec='black', lw=.7, alpha=.95))
+        if not np.isfinite(y).any():
+            ax.text(.5, .5, 'No defined values', transform=ax.transAxes, ha='center')
+        ax.set_title('{} | {}\n{}'.format(result.simulation.lake.name,
+                    SCENARIO_LABELS[result.scenario], TITLES[i]), loc='center', pad=12)
+        ax.set_ylabel(Y_LABELS[i])
+        ax.set_xlabel('Winter-ending year' if i >= 2 else 'Calendar year')
+        ax.set_xlim(1995, 2099)
+        ax.xaxis.set_major_locator(MaxNLocator(nbins=7, integer=True))
+        ax.grid(axis='y', color='#e7eaed', lw=.6)
+        _axis(ax)
     return fig
+

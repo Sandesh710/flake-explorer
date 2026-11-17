@@ -7,6 +7,7 @@ import json
 import zipfile
 from .indicators import baseline_statistics
 from .trends import trend_statistics
+from .response_summary import response_statistics
 
 
 def export_experiment(result, annual, figures, output_base, views=None):
@@ -19,7 +20,7 @@ def export_experiment(result, annual, figures, output_base, views=None):
     annual.to_csv(folder / 'annual_indicators.csv', index=False, float_format='%.17g')
     settings = dict(result.settings, final_state=result.simulation.final_state, views=views or {}, timestep_seconds=86400,
         baseline_statistics=baseline_statistics(annual), model_version='2.0.0',
-        sen_slopes=trend_statistics(annual),
+        sen_slopes=trend_statistics(annual), period_summary=response_statistics(annual),
         physics_sha256=hashlib.sha256(Path(__file__).with_name('physics.py').read_bytes()).hexdigest(),
         annual_definitions={'open_water_temperature': 'Mean T_ML over ALL days with h_ice < 0.01 m in the calendar year.',
             'open_water_days': 'Count of modeled days with h_ice < 0.01 m in the complete 365-day calendar year.',
@@ -35,3 +36,4 @@ def export_experiment(result, annual, figures, output_base, views=None):
         for path in sorted(folder.iterdir()):
             destination.write(path, path.name)
     return archive
+

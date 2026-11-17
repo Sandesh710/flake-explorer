@@ -16,6 +16,8 @@ from .indicators import annual_indicators, baseline_statistics
 from .annual_plot import annual_figure
 from .plotting import thermal_figure, winter_figure, location_map
 from .downloads import export_experiment
+from .indicators import METRICS
+from .response_summary import statistics_html
 
 CSS = '''<style>
 .flake-dashboard {font-family:Arial,sans-serif;color:#182b38;max-width:1320px;margin:auto;}
@@ -97,8 +99,10 @@ class Dashboard:
         if default_lake not in self.labels:
             default_lake = str(self.catalogue.iloc[0].DOWLKNUM)
         self.lake_id = default_lake
-        self.lake_choice = W.Combobox(options=sorted(self.ids_by_label), value=self.labels[default_lake],
-            description='Lake', ensure_option=True, placeholder='Search lake name, county or ID',
+        self.lake_search = W.Text(description='Search', placeholder='Lake name, county or ID',
+            style={'description_width': '55px'}, layout=W.Layout(width='100%'))
+        self.lake_choice = W.Dropdown(options=sorted(self.ids_by_label), value=self.labels[default_lake],
+            description='Lake',
             style={'description_width': '40px'}, layout=W.Layout(width='100%'))
         self.scenario = W.Dropdown(options=[(v, k) for k, v in SCENARIO_LABELS.items()], value='ssp245',
             description='Scenario', style={'description_width': '80px'}, layout=W.Layout(width='280px'))
@@ -143,6 +147,10 @@ class Dashboard:
             '<h3 style="margin:12px 0 6px">'
             'Additional model settings</h3>'
         )
+        self.extra.layout.display = 'none'
+        self.settings_toggle = W.ToggleButton(value=False, description='Additional model settings', icon='sliders',
+            layout=W.Layout(width='260px'))
+        self.settings_toggle.observe(self._toggle_settings, names='value')
         self.reset_button = W.Button(description='Restore lake defaults', icon='undo', layout=W.Layout(width='190px'))
         self.run_button = W.Button(description='Run simulation', button_style='primary', icon='play', layout=W.Layout(width='190px', height='40px'))
         self.download_button = W.Button(description='Download results', icon='download', disabled=True, layout=W.Layout(width='180px'))
@@ -152,17 +160,21 @@ class Dashboard:
         self.baseline_info = W.HTML()
         self.errors = W.Output()
         self.map_panel = self._create_map()
-        self.change_mode = W.ToggleButtons(options=[('Absolute values', False), ('Change from baseline', True)], value=False)
+        self.statistics = W.HTML('<p class="flake-small">Run the simulation to view period means and changes.</p>')
+        self.annual_variable = W.Dropdown(options=[('Choose a figure…', None),
+            ('⟨TML⟩ · Open-water temperature', METRICS[0]), ('DOW · Open-water duration', METRICS[1]),
+            ('don · Ice-on date', METRICS[2]), ('doff · Ice-off date', METRICS[3])], value=None,
+            description='Figure', layout=W.Layout(width='370px'), disabled=True)
         self.thermal_year = W.Dropdown(options=list(range(1995, 2100)), value=2012, description='Year', disabled=True, layout=W.Layout(width='210px'))
         self.winter_year = W.Dropdown(options=[('{}–{}'.format(y-1, y), y) for y in range(1995, 2100)], value=2014, description='Winter', disabled=True, layout=W.Layout(width='230px'))
         self.outputs = [W.Output(), W.Output(), W.Output()]
-        self.result_tabs = ResultPanels(pages=[W.VBox([self.change_mode, self.outputs[0], self.baseline_info]),
+        self.result_tabs = ResultPanels(pages=[W.VBox([self.statistics, self.annual_variable, self.outputs[0], self.baseline_info]),
             W.VBox([self.thermal_year, self.outputs[1], W.HTML('<p class="flake-small">The longest continuous open-water interval in the selected year. Vertical temperatures follow FLake’s bulk-profile reconstruction (Mironov, 2008); the thin line marks mixed-layer depth.</p>')]),
             W.VBox([self.winter_year, self.outputs[2], W.HTML('<p class="flake-small">Snow above the interface; ice extends downward. The window follows cover formation and melt, with approximately ten days of padding.</p>')])],
             titles=['Annual response', 'Thermal structure', 'Snow and ice'])
         coverage = '1,925 Minnesota lakes' if len(self.catalogue) == 1925 else '{} preview lakes · full catalogue: 1,925'.format(len(self.catalogue))
         heading = W.HTML('<div class="flake-title">FLake: a Python implementation</div><p>Explore lake temperature, mixing, snow and ice under a changing climate.</p><p class="flake-small"><b>GFDL-ESM4</b> · '+coverage+' · Baseline 1995–2014 · Projections 2015–2099</p>')
-        self.setup_controls = [self.lake_choice, self.scenario, self.depth, self.fetch, self.area, self.optics, self.kd,
+        self.setup_controls = [self.lake_search, self.lake_choice, self.scenario, self.depth, self.fetch, self.area, self.optics, self.kd,
             self.retention_mode, self.retention, self.snow, self.sediments, self.boundary_depth, self.boundary_temp] + list(self.initial_fields.values()) + list(self.advanced_fields.values())
         properties = W.VBox([W.HTML('<h3 style="margin:3px 0 8px">Lake and model settings</h3>'),
             _grid([self.depth, self.fetch, self.area]), self.optics, self.kd,
@@ -171,12 +183,13 @@ class Dashboard:
             _grid([self.boundary_depth, self.boundary_temp])], layout=W.Layout(flex='1 1 340px', min_width='300px'))
         map_area = W.VBox([self.map_panel, self.info, self.map_home], layout=W.Layout(flex='1 1 440px', min_width='300px'))
         top = W.Box([map_area, properties], layout=W.Layout(display='flex', flex_flow='row wrap', grid_gap='18px', align_items='flex-start'))
-        setup = W.VBox([W.HBox([self.lake_choice, self.scenario], layout=W.Layout(flex_flow='row wrap')), top,
-            self.extra, W.HBox([self.run_button, self.reset_button, self.download_button], layout=W.Layout(flex_flow='row wrap', grid_gap='8px'))])
+        setup = W.VBox([self.lake_search, W.HBox([self.lake_choice, self.scenario], layout=W.Layout(flex_flow='row wrap')), top,
+            self.settings_toggle, self.extra, W.HBox([self.run_button, self.reset_button, self.download_button], layout=W.Layout(flex_flow='row wrap', grid_gap='8px'))])
         setup.add_class('flake-card')
         self.widget = W.VBox([heading, setup, self.status, self.errors, self.result_tabs,
             W.HTML('<p class="flake-small">FLake: Dmitrii Mironov and collaborators, German Weather Service (DWD). Model reference: Mironov (2008), COSMO Technical Report 11. Native incoming longwave is supplied directly. Model data use a 365-day calendar.</p>')])
         self.widget.add_class('flake-dashboard')
+        self.lake_search.observe(self._filter_lakes, names='value')
         self.lake_choice.observe(self._lake_changed, names='value')
         self.area.observe(self._area_changed, names='value')
         self.retention_mode.observe(self._area_changed, names='value')
@@ -191,7 +204,7 @@ class Dashboard:
         self.reset_button.on_click(lambda button: self._set_lake(self.lake_id, move_map=False))
         self.download_button.on_click(self._download)
         self.map_home.on_click(self._overview)
-        self.change_mode.observe(lambda change: self._draw(0), names='value')
+        self.annual_variable.observe(lambda change: self._draw(0), names='value')
         self.thermal_year.observe(lambda change: self._draw(1), names='value')
         self.winter_year.observe(lambda change: self._draw(2), names='value')
         self.result_tabs.observe(lambda change: self._draw(change['new']), names='selected_index')
@@ -208,7 +221,7 @@ class Dashboard:
 
     def _create_map(self):
         try:
-            from ipyleaflet import Map, GeoJSON, CircleMarker, ScaleControl, WidgetControl, AttributionControl, Marker, Icon
+            from ipyleaflet import Map, GeoJSON, ScaleControl, WidgetControl, AttributionControl, Marker, Icon
             import base64
             # The background is bundled vector geometry. No raster tile provider,
             # API key, or external map request is needed in Colab.
@@ -238,8 +251,10 @@ class Dashboard:
                 hover_style={'color': '#142f42', 'weight': 2, 'fillOpacity': 1})
             self.points.on_click(self._map_selected)
             self.map.add(self.points)
-            self.marker = CircleMarker(location=(46.2, -94.4), radius=10, color='#152f41',
-                weight=2, fill_color='#f0aa38', fill_opacity=1)
+            star_svg = '<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"><path d="M18 2 L22 12 L33 13 L25 21 L27 33 L18 27 L9 33 L11 21 L3 13 L14 12 Z" fill="#f0aa38" stroke="#152f41" stroke-width="2"/></svg>'
+            star_icon = Icon(icon_url='data:image/svg+xml;base64,'+base64.b64encode(star_svg.encode()).decode(),
+                icon_size=[36, 36], icon_anchor=[18, 18], shadow_url='')
+            self.marker = Marker(location=(46.2, -94.4), icon=star_icon, draggable=False, keyboard=False, z_index_offset=1000)
             self.map.add(self.marker)
             self.map.add(ScaleControl(position='bottomleft', imperial=False))
             self.map.add(AttributionControl(position='bottomright', prefix='Boundaries: U.S. Census Bureau (2024)'))
@@ -251,6 +266,22 @@ class Dashboard:
             self.static_map = W.Output()
             return W.VBox([W.HTML('<p class="flake-small">Interactive map is unavailable in this environment. Use the lake search above; Colab setup installs the interactive map dependency.</p>'), self.static_map])
 
+    def _toggle_settings(self, event):
+        self.extra.layout.display = '' if event['new'] else 'none'
+        self.settings_toggle.description = 'Hide additional settings' if event['new'] else 'Additional model settings'
+
+    def _filter_lakes(self, event):
+        query = self.lake_search.value.strip().casefold()
+        labels = sorted(label for label in self.ids_by_label if query in label.casefold())
+        previous = self._updating
+        self._updating = True
+        try:
+            self.lake_choice.options = labels
+            current = self.labels[self.lake_id]
+            self.lake_choice.value = current if current in labels else None
+        finally:
+            self._updating = previous
+
     def _overview(self, button=None):
         if self._map_available:
             self.map.center = MAP_CENTER; self.map.zoom = MAP_ZOOM
@@ -258,7 +289,7 @@ class Dashboard:
     def _map_selected(self, **event):
         key = str(event.get('feature', {}).get('properties', {}).get('lake_id', ''))
         if key in self.labels:
-            self.lake_choice.value = self.labels[key]
+            self._set_lake(key)
 
     def _lake_changed(self, event):
         if not self._updating and event['new'] in self.ids_by_label:
@@ -268,6 +299,7 @@ class Dashboard:
         self._updating = True
         try:
             self.lake_id = key
+            self.lake_search.value = ''
             row = self.catalogue.loc[self.catalogue.DOWLKNUM.eq(key)].iloc[0].to_dict()
             self.lake_choice.value = self.labels[key]
             lake, options, initial = lake_from_row(row), default_options(row), default_initial(row)
@@ -286,7 +318,7 @@ class Dashboard:
                 self.marker.location = (lake.latitude, lake.longitude)
                 self.marker.popup = W.HTML('<b>{}</b><br>{:.2f} m mean depth'.format(escape(lake.name), lake.mean_depth_m))
                 if move_map:
-                    self.map.center = self.marker.location; self.map.zoom = 8
+                    self.map.center = self.marker.location; self.map.zoom = self.map.max_zoom
             else:
                 renamed = self.catalogue.rename(columns={'DOWLKNUM': 'lake_id', 'LAKE_NAME': 'name', 'lon': 'longitude', 'lat': 'latitude', 'depth_w': 'mean_depth_m'})
                 with self.static_map:
@@ -352,6 +384,7 @@ class Dashboard:
             self.result, self.annual, self.figures = result, annual, {}
             self._stale = False
             self.thermal_year.disabled = False; self.winter_year.disabled = False
+            self.annual_variable.disabled = False
             self.result_tabs.selected_index = 0
             self._draw(0)
             self._set_status('Complete · {} · {} · 1995–2099. Choose a result tab or download your experiment.'.format(lake.name, SCENARIO_LABELS[result.scenario]))
@@ -368,14 +401,21 @@ class Dashboard:
     def _draw(self, index):
         if self.result is None or index is None:
             return
+        if index == 0:
+            self.statistics.value = statistics_html(self.result, self.annual)
+            if self.annual_variable.value is None:
+                self.outputs[0].clear_output()
+                self.figures.pop(0, None)
+                self.baseline_info.value = '<p class="flake-small">Choose a variable above to view its annual figure.</p>'
+                return
         output = self.outputs[index]
         with output:
             output.clear_output(wait=True)
             try:
                 if index == 0:
-                    figure = annual_figure(self.result, self.annual, self.change_mode.value)
-                    name = 'annual_response'
-                    self.baseline_info.value = '<p class="flake-small">Shading: near-century 2020–2040, mid-century 2050–2070, end-century 2080–2099. Sen’s slopes: 2015–2099.</p>'
+                    figure = annual_figure(self.result, self.annual, metric=self.annual_variable.value)
+                    name = 'annual_' + self.annual_variable.value
+                    self.baseline_info.value = '<p class="flake-small">Sen’s slope: 2015–2099.</p>'
                 elif index == 1:
                     figure = thermal_figure(self.result.simulation, self.thermal_year.value, view='open_water')
                     name = 'thermal_{}'.format(self.thermal_year.value)
@@ -396,8 +436,12 @@ class Dashboard:
             for index in range(3):
                 self._draw(index)
             figures = {name: figure for name, figure in self.figures.values()}
+            for metric in METRICS:
+                figure = annual_figure(self.result, self.annual, metric=metric)
+                figures['annual_' + metric] = figure
+                plt.close(figure)
             archive = export_experiment(self.result, self.annual, figures, self.store.cache / 'results',
-                views={'annual_changes_from_baseline': self.change_mode.value, 'thermal_year': self.thermal_year.value,
+                views={'annual_variable': self.annual_variable.value, 'thermal_year': self.thermal_year.value,
                        'winter_ending_year': self.winter_year.value})
             try:
                 from google.colab import files
@@ -419,3 +463,4 @@ class Dashboard:
 
 def launch(root=ROOT, local_export=None, cache=None, default_lake='10000200'):
     return Dashboard(root=root, local_export=local_export, cache=cache, default_lake=default_lake).display()
+

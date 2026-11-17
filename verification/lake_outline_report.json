@@ -1,0 +1,54 @@
+{
+  "status": "PASS_WITH_FIVE_LOCATION_ONLY_BASINS",
+  "catalogue_lakes": 1925,
+  "matched_outlines": 1920,
+  "missing_lakes": [
+    {
+      "lake_id": "31065701",
+      "name": "Jack the Horse (North)"
+    },
+    {
+      "lake_id": "31065702",
+      "name": "Jack the Horse (South)"
+    },
+    {
+      "lake_id": "60002701",
+      "name": "Cross (North East Bay)"
+    },
+    {
+      "lake_id": "60002702",
+      "name": "Cross (Main  Basin)"
+    },
+    {
+      "lake_id": "60002703",
+      "name": "Cross (East Bay)"
+    }
+  ],
+  "repairs": [
+    {
+      "lake_id": "30009600",
+      "original_issue": "Ring Self-intersection[-93.3541244555057 45.7270900718366]",
+      "repair": "make_valid; retain polygonal components only",
+      "original_geometry_type": "Polygon",
+      "repaired_geometry_type": "Polygon",
+      "nonpolygon_components_excluded": false
+    }
+  ],
+  "source_shapefile_sha256": "04f9c86879f4ab180437e7eee39f2d2bb17946ccb95de83506bdbe2ac6fb0e37",
+  "simplification_applied": false,
+  "coordinate_rounding_applied": false,
+  "runtime_geometry_dependency": false,
+  "marker_adjusted_inside_polygon_count": 135,
+  "model_parameters_changed": false,
+  "archive_bytes": 24576794,
+  "local_checks": {
+    "all_outlines_valid": true,
+    "all_stars_inside_outlines": true,
+    "all_outlines_fit_test_viewport": true,
+    "selected_outline_replaced_on_selection": true,
+    "five_missing_basins_use_marker_fallback": true,
+    "non_map_dashboard_methods_unchanged": true,
+    "runtime_python_3_7_syntax": true,
+    "full_model_rerun": false
+  }
+}

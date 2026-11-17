@@ -16,6 +16,7 @@ from .indicators import annual_indicators, baseline_statistics
 from .annual_plot import annual_figure
 from .plotting import thermal_figure, winter_figure, location_map
 from .downloads import export_experiment
+from .lake_map import LakeOutlines, fit_lake
 from .indicators import METRICS
 from .response_summary import statistics_html
 
@@ -94,6 +95,7 @@ class Dashboard:
         self._stale = False
         self._building = True
         self._map_available = False
+        self.outlines = LakeOutlines(self.root)
         self.labels = {str(r['DOWLKNUM']): '{} · {} · {}'.format(str(r['LAKE_NAME']), str(r['CTY_NAME']).title(), r['DOWLKNUM']) for r in self.catalogue.to_dict('records')}
         self.ids_by_label = {v: k for k, v in self.labels.items()}
         if default_lake not in self.labels:
@@ -225,7 +227,7 @@ class Dashboard:
             import base64
             # The background is bundled vector geometry. No raster tile provider,
             # API key, or external map request is needed in Colab.
-            self.map = Map(layers=(), center=MAP_CENTER, zoom=MAP_ZOOM, zoom_snap=.25, zoom_delta=.5, min_zoom=5, max_zoom=13,
+            self.map = Map(layers=(), center=MAP_CENTER, zoom=MAP_ZOOM, zoom_snap=.25, zoom_delta=.5, min_zoom=5, max_zoom=18,
                 attribution_control=False, scroll_wheel_zoom=True,
                 layout=W.Layout(width='100%', height='430px'))
             boundary = __import__('json').loads((self.root / 'assets/region_states.geojson').read_text())
@@ -251,13 +253,17 @@ class Dashboard:
                 hover_style={'color': '#142f42', 'weight': 2, 'fillOpacity': 1})
             self.points.on_click(self._map_selected)
             self.map.add(self.points)
+            self.lake_outline = GeoJSON(data={'type': 'FeatureCollection', 'features': []},
+                style={'color': '#176da0', 'weight': 2, 'fillColor': '#66b8e0', 'fillOpacity': .50},
+                hover_style={'color': '#124c72', 'weight': 2.5, 'fillOpacity': .6})
+            self.map.add(self.lake_outline)
             star_svg = '<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"><path d="M18 2 L22 12 L33 13 L25 21 L27 33 L18 27 L9 33 L11 21 L3 13 L14 12 Z" fill="#f0aa38" stroke="#152f41" stroke-width="2"/></svg>'
             star_icon = Icon(icon_url='data:image/svg+xml;base64,'+base64.b64encode(star_svg.encode()).decode(),
                 icon_size=[36, 36], icon_anchor=[18, 18], shadow_url='')
             self.marker = Marker(location=(46.2, -94.4), icon=star_icon, draggable=False, keyboard=False, z_index_offset=1000)
             self.map.add(self.marker)
             self.map.add(ScaleControl(position='bottomleft', imperial=False))
-            self.map.add(AttributionControl(position='bottomright', prefix='Boundaries: U.S. Census Bureau (2024)'))
+            self.map.add(AttributionControl(position='bottomright', prefix='Boundaries: U.S. Census Bureau (2024) · Lakes: Minnesota DNR'))
             self.map.add(WidgetControl(widget=W.HTML(depth_legend_html()), position='topright'))
             self.map.add(WidgetControl(widget=W.HTML(area_legend_html()), position='bottomright'))
             self._map_available = True
@@ -315,10 +321,21 @@ class Dashboard:
             self.info.value = '<p class="flake-small"><b>{}</b> · {} County · {:.3f}°N, {:.3f}°W<br>Recorded mean depth {:.2f} m · area {:.2f} km². Points show lake locations.</p>'.format(
                 escape(lake.name), escape(lake.county.title()), lake.latitude, abs(lake.longitude), lake.mean_depth_m, lake.area_km2)
             if self._map_available:
-                self.marker.location = (lake.latitude, lake.longitude)
+                self.lake_outline.data = {'type': 'FeatureCollection', 'features': []}
+                outline = self.outlines.get(key)
+                if outline is not None:
+                    feature, record = outline
+                    self.lake_outline.data = {'type': 'FeatureCollection', 'features': [feature]}
+                    self.marker.location = tuple(record['marker'])
+                else:
+                    self.marker.location = (lake.latitude, lake.longitude)
+                    self.info.value += '<p class="flake-small">Lake outline unavailable for this basin; the star shows its recorded location.</p>'
                 self.marker.popup = W.HTML('<b>{}</b><br>{:.2f} m mean depth'.format(escape(lake.name), lake.mean_depth_m))
                 if move_map:
-                    self.map.center = self.marker.location; self.map.zoom = self.map.max_zoom
+                    if outline is not None:
+                        fit_lake(self.map, record['bounds'])
+                    else:
+                        self.map.center = self.marker.location; self.map.zoom = 11
             else:
                 renamed = self.catalogue.rename(columns={'DOWLKNUM': 'lake_id', 'LAKE_NAME': 'name', 'lon': 'longitude', 'lat': 'latitude', 'depth_w': 'mean_depth_m'})
                 with self.static_map:
@@ -463,4 +480,5 @@ class Dashboard:
 
 def launch(root=ROOT, local_export=None, cache=None, default_lake='10000200'):
     return Dashboard(root=root, local_export=local_export, cache=cache, default_lake=default_lake).display()
+
 
